@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>aviasales</title>
+    <!--    links   -->
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"/>
+
+    <!--    header scripts  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microplugin/0.0.3/microplugin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sifter/0.5.4/sifter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/selectize.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="scripts/wow.min.js"></script>
+    <script src="scripts/optg.js"></script>
+    <script src="scripts/index.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+<div class="email-bt">
+    <div class="text-call">
+        <i class="bi bi-telegram"></i>
+        <a href="#">Обратная<br>связь</a>
+    </div>
+</div>
+<div class="dd-shadow"></div>
+<header class="header">
+    <div class="dd-shadow"></div>
+    <div class="header-container container">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="logo">
+        </a>
+        <div class="header-links">
+            <div class="dd-header">
+                <div class="dd-text">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Вход</span>
+                </div>
+                <div class="dd-toggle">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-aut" type="button" role="tab" aria-controls="pills-aut"
+                                    aria-selected="false">Авторизация
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-reg" type="button" role="tab" aria-controls="pills-reg"
+                                    aria-selected="true">Регистрация
+                            </button>
+                        </li>
+                    </ul>
+                    <form class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-aut" role="tabpanel" aria-labelledby="pills-aut-tab">
+                            <div class="header-form-input">
+                                    <span>
+                                        <sup>*</sup>Логин
+                                    </span>
+                                <input required type="text" class="form-control">
+                            </div>
+                            <div class="header-form-input">
+                                    <span>
+                                        <sup>*</sup>Пороль
+                                    </span>
+                                <input required type="text" class="form-control">
+                            </div>
+                            <button type="button" class="btn-accept btn btn-primary">
+                                Войти
+                            </button>
+                        </div>
+                        <div class="tab-pane fade" id="pills-reg" role="tabpanel" aria-labelledby="pills-reg-tab">
+                            <div class="header-form-input">
+                                    <span>
+                                        <sup>*</sup>Логин
+                                    </span>
+                                <input required type="text" class="form-control">
+                            </div>
+                            <div class="header-form-input">
+                                    <span>
+                                        <sup>*</sup>Email
+                                    </span>
+                                <input required type="email" class="form-control">
+                            </div>
+                            <div class="header-form-input">
+                                    <span>
+                                        <sup>*</sup>Номер телефона
+                                    </span>
+                                <input required type="text" class="form-control" value="+998" maxlength="13">
+                            </div>
+                            <div class="header-form-input">
+                                    <span>
+                                        <sup>*</sup>Пароль
+                                    </span>
+                                <input required type="text" class="form-control">
+                            </div>
+                            <button type="button" class="btn-accept btn btn-primary">
+                                Регистрация
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="dd-lang">
+                <div class="lang-text">
+                    <i class="bi bi-globe2"></i>
+                </div>
+                <div class="dd-lang-toggle">
+                    <a href="#">РУ</a>
+                    <a href="#">UZB</a>
+                    <a href="#">ENG</a>
+                </div>
+            </div>
+            <div class="phone-block">
+                <a href="tel:+998999999999">+99899-999-99-99</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="form-container section">
+        <div class="form-block container">
+            <div class="h1-text">
+                <h1 class="mb-2">Билеты на самолет. Экономьте на полете!</h1>
+                <h5 class="mb-4 d-block" style="text-align: center">Летим в <span class="type-word"></span> </h5>
+            </div>
+
+            <script>
+                function replaceElements(elem_1, elem_2) {
+                    let next = elem_1.nextElementSiblings,
+                        parent_1 = elem_1.parentNode,
+                        parent_2 = elem_2.parentNode
+                    ;
+
+                    parent_2.insertBefore(elem_1, elem_2);
+
+                    if (next) {
+                        parent_1.insertBefore(elem_2, next);
+                    } else {
+                        parent_1.appendChild(elem_2);
+                    }
+
+                }
+            </script>
+
+            <form class="d-flex flex-md-wrap flex-sm-wrap flex-wrap align-items-center">
+                <div class="flex-grow-1 col-lg-2 col-md-6 col-sm-12 col-12 p-md-0 m-md-0 form-item" style="position: relative">
+                    <div class="control-group">
+                        <select id="select-country1" class="country-input" placeholder="Откуда"></select>
+                    </div>
+                    <a href="#" onclick='return replaceElements(tour_item1, tour_item2 );' class="replace-btn">
+                        <i class="bi bi-arrow-left-right"></i>
+                    </a>
+                </div>
+                <div class="flex-grow-1 col-lg-2 col-md-6 col-sm-12 col-12 p-md-0 m-md-0 form-item">
+                    <div class="control-group">
+                        <select id="select-country2" class="country-input" placeholder="Куда"></select>
+                    </div>
+                </div>
+                <div class="form-item col-lg-2 p-md-0 m-md-0 p-sm-0 m-sm-0 col-sm-6 p-0 m-0 col-6 col-md-3 flex-grow-1 calen-block">
+                    <input id="start-date" autocomplete="off" required type="text" class="form-control" placeholder="Начало">
+                    <i class="bi bi-calendar-week calen-ico"></i>
+                </div>
+                <div class="form-item col-lg-2 p-md-0 m-md-0 p-sm-0 m-sm-0 col-sm-6 p-0 m-0 col-6 col-md-3 flex-grow-1 calen-block calen-block2">
+                    <input id="end-date" autocomplete="off" required type="text" class="form-control" placeholder="Конец">
+                    <i class="bi bi-calendar-week calen-ico"></i>
+                </div>
+<!--                <div class="btn-group form-item flex-grow-1">-->
+<!--                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuClickableInside"-->
+<!--                            data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">-->
+<!--                        <div>-->
+<!--                            <span class="dd-form-title">Оплата</span>-->
+<!--                            <span class="form-small">Любая</span>-->
+<!--                        </div>-->
+<!--                    </button>-->
+<!--                    <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuClickableInside">-->
+<!--                        <li>-->
+<!--                            <div class="form-check">-->
+<!--                                <input class="form-check-input" type="radio" checked value="Любой" name="payment"-->
+<!--                                       id="pay1">-->
+<!--                                <label class="form-check-label" for="pay1">-->
+<!--                                    Любой-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <div class="form-check">-->
+<!--                                <input class="form-check-input" type="radio" value="UzCard" name="payment" id="pay2">-->
+<!--                                <label class="form-check-label" for="pay2">-->
+<!--                                    UzCard-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <div class="form-check">-->
+<!--                                <input class="form-check-input" type="radio" value="Visa/Master" name="payment"-->
+<!--                                       id="pay3">-->
+<!--                                <label class="form-check-label" for="pay3">-->
+<!--                                    Visa/Master-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+                <div class="btn-group col-lg-2  p-md-0 m-md-0 col-sm-12 col-12 col-md-3 form-item flex-grow-1">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuClickableInside2"
+                            data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        <div>
+                            <div class="dd-form-title d-flex"><span class="pers-count d-block">1</span> пассаж.</div>
+                            <span class="form-small2 ">Эконом</span>
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuClickableInside2">
+                        <li class="pers-count-block">
+                            <div class="pers-count-text">
+                                <span class="pers-text">Взрослые</span>
+                                <span class="pers-text-small">Старше 12 лет</span>
+                            </div>
+                            <div class="pers-count-math d-flex">
+                                <button type="button" class="btn btn-outline-primary min adlMin flex-grow-1 me-2">-
+                                </button>
+                                <input type="text" readonly value="1" data-max-count="20" class="adlInp flex-grow-2"
+                                       class="calc-inp">
+                                <button type="button" class="btn btn-outline-primary plus adlPlus flex-grow-1 ms-2">+
+                                </button>
+                            </div>
+                        </li>
+                        <li class="pers-count-block">
+                            <div class="pers-count-text">
+                                <span class="pers-text">Дети</span>
+                                <span class="pers-text-small">От 2 до 12 лет</span>
+                            </div>
+                            <div class="pers-count-math d-flex">
+                                <button type="button" class="btn btn-outline-primary min childMin flex-grow-1 me-2">-
+                                </button>
+                                <input type="text" readonly value="0" data-max-count="20" class="childInp flex-grow-2"
+                                       class="calc-inp">
+                                <button type="button" class="btn btn-outline-primary plus childPlus flex-grow-1 ms-2">
+                                    +
+                                </button>
+                            </div>
+                        </li>
+                        <li class="pers-count-block">
+                            <div class="pers-count-text">
+                                <span class="pers-text">Младенцы</span>
+                                <span class="pers-text-small">До 2 лет</span>
+                            </div>
+                            <div class="pers-count-math d-flex">
+                                <button type="button" class="btn btn-outline-primary min kidMin flex-grow-1 me-2">-
+                                </button>
+                                <input type="text" readonly value="0" data-max-count="20" class="kidInp flex-grow-2"
+                                       class="calc-inp">
+                                <button type="button" class="btn btn-outline-primary plus kidPlus flex-grow-1 ms-2">+
+                                </button>
+                            </div>
+                        </li>
+
+                        <li class="d-flex">
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" value="Комфорт" name="pers-count" id="kom">
+                                <label class="form-check-label" for="kom">
+                                    Комфорт
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="Бизнес" name="pers-count"
+                                       id="business">
+                                <label class="form-check-label" for="business">
+                                    Бизнес
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-accept-btn col-lg-2 p-md-0 m-md-0 col-sm-12 col-12 col-md-3 form-item flex-grow-1">
+                    <button class="btn-accept btn btn-primary">Найти</button>
+                </div>
+            </form>
+            <div class="d-flex m-auto mt-4 flex-column justify-content-center align-items-center">
+                <span class="scroll-text">
+                    Прокрутить вниз
+                </span>
+                <div class="knsl-scroll-hint"></div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="banner-container section">
+        <h3 class="text-center mb-4">Лучшие предложения!</h3>
+        <div class="banner-block container">
+            <div class="swiper swiper-desc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <a class="banner-desk" href="#">
+                                <img data-src="./img/bg1.jpg" style="max-width: 100%" class="swiper-lazy">
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <a class="banner-desk" href="#">
+                                <img data-src="./img/bg2.jpg" style="max-width: 100%" class="swiper-lazy">
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <a class="banner-desk" href="#">
+                                <img data-src="./img/bg3.jpg" style="max-width: 100%" class="swiper-lazy">
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper swiper-mob">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <a class="banner-desk" href="#" style="background-image: url(./img/mob-banner1.jpg);">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <a class="banner-desk" href="#" style="background-image: url(./img/mob-banner2.jpg);">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next button-prev">
+                <i class="bi bi-arrow-right-circle"></i>
+            </div>
+            <div class="swiper-button-prev button-next">
+                <i class="bi bi-arrow-left-circle"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="accordion-container section">
+        <div class="accordion-sections">
+            <div class="container">
+                <h3 class="text-center mb-4" style="color: #444444">Попуярные направления</h3>
+                <div class="accordion-block d-flex flex-wrap">
+
+                <div class="accordion accordion-flush me-4 flex-grow-1 mb-4" id="accordion1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div>
+                                    <img src="img/ru.jpg" alt="">
+                                </div>
+                                <span>Россия</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#headingOne">
+                            <div class="accordion-body">
+                                <a href="#">Москва</a>
+                                <a href="#">Минск</a>
+                                <a href="#">Орск</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion accordion-flush flex-grow-1 me-4 mb-4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <div>
+                                    <img src="img/tr.jpg" alt="">
+                                </div>
+                                <span>Турция</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#headingTwo">
+                            <div class="accordion-body">
+                                <a href="#">Аланья</a>
+                                <a href="#">Анталья</a>
+                                <a href="#">Дубай</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion accordion-flush flex-grow-1 mb-4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <div>
+                                    <img src="img/kz.jpg" alt="">
+                                </div>
+                                <span>Казахстан</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#headingThree">
+                            <div class="accordion-body">
+                                <a href="#">Бишкек</a>
+                                <a href="#">Казань</a>
+                                <a href="#">Алматы</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion accordion-flush flex-grow-1 me-4 mb-4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                <div>
+                                    <img src="img/tr.jpg" alt="">
+                                </div>
+                                <span>Турция</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#headingFour">
+                            <div class="accordion-body">
+                                <a href="#">Аланья</a>
+                                <a href="#">Анталья</a>
+                                <a href="#">Дубай</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion accordion-flush me-4 flex-grow-1 mb-4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                <div>
+                                    <img src="img/ru.jpg" alt="">
+                                </div>
+                                <span>Россия</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#headingFive">
+                            <div class="accordion-body">
+                                <a href="#">Москва</a>
+                                <a href="#">Минск</a>
+                                <a href="#">Орск</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion accordion-flush flex-grow-1 mb-4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapSix">
+                                <div>
+                                    <img src="img/kz.jpg" alt="">
+                                </div>
+                                <span>Казахстан</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#headingSix">
+                            <div class="accordion-body">
+                                <a href="#">Бишкек</a>
+                                <a href="#">Казань</a>
+                                <a href="#">Алматы</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion accordion-flush flex-grow-1 me-4 mb-4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                <div>
+                                    <img src="img/tr.jpg" alt="">
+                                </div>
+                                <span>Турция</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#headingSeven">
+                            <div class="accordion-body">
+                                <a href="#">Аланья</a>
+                                <a href="#">Анталья</a>
+                                <a href="#">Дубай</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion accordion-flush me-4 flex-grow-1 mb-4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                <div>
+                                    <img src="img/ru.jpg" alt="">
+                                </div>
+                                <span>Россия</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#headingEight">
+                            <div class="accordion-body">
+                                <a href="#">Москва</a>
+                                <a href="#">Минск</a>
+                                <a href="#">Орск</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion accordion-flush flex-grow-1 mb-4">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                                    <div>
+                                        <img src="img/kz.jpg" alt="">
+                                    </div>
+                                    <span>Казахстан</span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#headingNine">
+                                <div class="accordion-body">
+                                    <a href="#">Бишкек</a>
+                                    <a href="#">Казань</a>
+                                    <a href="#">Алматы</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            <div class="hr"></div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer-block">
+    <div class="container">
+        <div class="col-lg-4 col-md-4 col-6 pe-2">
+            <div class="footer-img">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="footer-logo-text">
+                <span>
+                    Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.
+                </span>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 px-2">
+            <div class="footer-link-title">
+                <h5>
+                    Helpful Links
+                </h5>
+            </div>
+            <div class="footer-link-texts">
+                <div class="col-6">
+                    <a href="#">
+                        Lorem ipsum dolor.
+                    </a>
+                    <a href="#">
+                        Lorem ipsum dolor.
+                    </a>
+                    <a href="#">
+                        Lorem ipsum dolor.
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="#">
+                        Lorem ipsum dolor.
+                    </a>
+                    <a href="#">
+                        Lorem ipsum dolor.
+                    </a>
+                    <a href="#">
+                        Lorem ipsum dolor.
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 ps-2">
+            <div class="footer-link-title">
+                <h5>
+                    Contact Us
+                </h5>
+            </div>
+            <div class="footer-social-links">
+                <span>12345 Little Lonsdale St, Melbourne</span>
+                <div class="footer-email-block">
+                    <span>E-Mail:</span>
+                    <a href="#">office@example.com</a>
+                </div>
+                <div class="footer-social-block">
+                    <a href="#"><i class="bi bi-telegram"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--    scripts     -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+</html>
