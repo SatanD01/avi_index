@@ -1572,5 +1572,9 @@ button.accordion-button span {
     border-bottom: 1px solid rgba(68, 68, 68, 0.44);
 }
 
+.h1-text h1 {
+    margin-top: 50px;
+}
+
 /*#85cfe1 light_blue*/
 /*#444 darck_blue*/
