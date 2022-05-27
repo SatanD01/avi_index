@@ -114,7 +114,7 @@ img {
 }
 
 button.nav-link.active {
-    background-color: #0131ff !important;
+    background-color: #83D0E4 !important;
     font-size: 16px;
 }
 
@@ -124,7 +124,7 @@ button.nav-link {
 
 button.nav-link:hover {
     color: white;
-    background-color: #0131ff54;
+    background-color: #83D0E454;
 }
 
 .header-form-input {
@@ -132,8 +132,8 @@ button.nav-link:hover {
 }
 
 button.btn-accept.btn.btn-primary {
-    background-color: #0131ff;
-    border-color: #0131ff;
+    background-color: #83D0E4;
+    border-color: #83D0E4;
     margin: auto;
     display: block;
     border-radius: 1rem;
@@ -186,8 +186,8 @@ button.btn-accept.btn.btn-primary:focus {
 }
 
 .dd-lang-toggle a:hover {
-    border-left: 1px solid #0131ff;
-    background-color: #0131ff2e;
+    border-left: 1px solid #83D0E4;
+    background-color: #83D0E42e;
     transition: 0.2s;
     color: white;
 }
@@ -338,8 +338,8 @@ button.btn-accept.btn.btn-primary:focus {
 }
 
 input.form-control:focus {
-    border-color: #0131ff;
-    box-shadow: 0 0 0 0.25rem #0131ff40;
+    border-color: #83D0E4;
+    box-shadow: 0 0 0 0.25rem #83D0E440;
 }
 
 .litepicker .container__days .day-item {
@@ -369,8 +369,8 @@ span.form-small, span.form-small2 {
 }
 
 body .form-check-input:checked {
-    background-color: #0131ff;
-    border-color: #0131ff;
+    background-color: #83D0E4;
+    border-color: #83D0E4;
 }
 
 .pers-count {
@@ -732,7 +732,7 @@ body .form-accept-btn.form-item.flex-grow-1 button.btn-accept.btn.btn-primary i 
     position: relative;
     width: 24px;
     height: 40px;
-    border: solid 2px #0131ff;
+    border: solid 2px #83D0E4;
     border-radius: 20px;
     margin: auto;
     margin-top: 10px;
@@ -850,11 +850,11 @@ body .swiper-button-next:after, body .swiper-button-prev:after {
 
 .button-next i, .button-prev i {
     font-size: 40px;
-    color: #0131ff;
+    color: #83D0E4;
 }
 
 .button-next:hover i:before, .button-prev:hover i:before {
-    box-shadow: 0 0 0 0.25rem #0131ff40;
+    box-shadow: 0 0 0 0.25rem #83D0E440;
     transition: 0.2s;
 }
 
@@ -866,14 +866,14 @@ body .swiper-button-next:after, body .swiper-button-prev:after {
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: white;
-    border: 3px solid #0131ff;
+    border: 3px solid #83D0E4;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
     opacity: 1;
     width: 20px;
     height: 20px;
-    background-color: #0131ff;
+    background-color: #83D0E4;
     border: 3px solid white;
 }
 
@@ -949,7 +949,7 @@ footer {
 
 
 .accordion-body a:hover {
-    color: #0131ff;
+    color: #83D0E4;
 }
 
 .accordion-body a:not(:last-child) {
@@ -970,10 +970,10 @@ footer {
 }
 
 .email-bt {
-    background: #0131ff;
-    border: 2px solid #0131ff;
+    background: #83D0E4;
+    border: 2px solid #83D0E4;
     border-radius: 50%;
-    box-shadow: 0 8px 10px rgba(1, 49, 255,0.3);
+    box-shadow: 0 8px 10px rgba(131, 208, 228,0.3);
     cursor: pointer;
     height: 68px;
     text-align: center;
@@ -997,7 +997,7 @@ footer {
 
 .email-bt .text-call a {
     text-align: center;
-    color: #0131ff;
+    color: #83D0E4;
     opacity: 0;
     font-size: 0;
     position: absolute;
@@ -1025,7 +1025,7 @@ footer {
 }
 
 .email-bt:hover i {
-    color: #0131ff;
+    color: #83D0E4;
     font-size: 40px;
     transition: .3s;
 }
@@ -1045,37 +1045,37 @@ footer {
 
 @-webkit-keyframes email-an {
     0% {
-        box-shadow: 0 8px 10px rgba(1, 49, 255,0.3),0 0 0 0 rgba(1, 49, 255,0.2),0 0 0 0 rgba(1, 49, 255,0.2)
+        box-shadow: 0 8px 10px rgba(131, 208, 228,0.3),0 0 0 0 rgba(131, 208, 228,0.2),0 0 0 0 rgba(131, 208, 228,0.2)
     }
 
     40% {
-        box-shadow: 0 8px 10px rgba(1, 49, 255,0.3),0 0 0 15px rgba(1, 49, 255,0.2),0 0 0 0 rgba(1, 49, 255,0.2)
+        box-shadow: 0 8px 10px rgba(131, 208, 228,0.3),0 0 0 15px rgba(131, 208, 228,0.2),0 0 0 0 rgba(131, 208, 228,0.2)
     }
 
     80% {
-        box-shadow: 0 8px 10px rgba(1, 49, 255,0.3),0 0 0 30px rgba(1, 49, 255,0),0 0 0 26.7px rgba(1, 49, 255,0.067)
+        box-shadow: 0 8px 10px rgba(131, 208, 228,0.3),0 0 0 30px rgba(131, 208, 228,0),0 0 0 26.7px rgba(131, 208, 228,0.067)
     }
 
     100% {
-        box-shadow: 0 8px 10px rgba(1, 49, 255,0.3),0 0 0 30px rgba(1, 49, 255,0),0 0 0 40px rgba(1, 49, 255,0.0)
+        box-shadow: 0 8px 10px rgba(131, 208, 228,0.3),0 0 0 30px rgba(131, 208, 228,0),0 0 0 40px rgba(131, 208, 228,0.0)
     }
 }
 
 @keyframes email-an {
     0% {
-        box-shadow: 0 8px 10px rgba(1, 49, 255,0.3),0 0 0 0 rgba(1, 49, 255,0.2),0 0 0 0 rgba(1, 49, 255,0.2)
+        box-shadow: 0 8px 10px rgba(131, 208, 228,0.3),0 0 0 0 rgba(131, 208, 228,0.2),0 0 0 0 rgba(131, 208, 228,0.2)
     }
 
     40% {
-        box-shadow: 0 8px 10px rgba(1, 49, 255,0.3),0 0 0 15px rgba(1, 49, 255,0.2),0 0 0 0 rgba(1, 49, 255,0.2)
+        box-shadow: 0 8px 10px rgba(131, 208, 228,0.3),0 0 0 15px rgba(131, 208, 228,0.2),0 0 0 0 rgba(131, 208, 228,0.2)
     }
 
     80% {
-        box-shadow: 0 8px 10px rgba(1, 49, 255,0.3),0 0 0 30px rgba(1, 49, 255,0),0 0 0 26.7px rgba(1, 49, 255,0.067)
+        box-shadow: 0 8px 10px rgba(131, 208, 228,0.3),0 0 0 30px rgba(131, 208, 228,0),0 0 0 26.7px rgba(131, 208, 228,0.067)
     }
 
     100% {
-        box-shadow: 0 8px 10px rgba(1, 49, 255,0.3),0 0 0 30px rgba(1, 49, 255,0),0 0 0 40px rgba(1, 49, 255,0.0)
+        box-shadow: 0 8px 10px rgba(131, 208, 228,0.3),0 0 0 30px rgba(131, 208, 228,0),0 0 0 40px rgba(131, 208, 228,0.0)
     }
 }
 
@@ -1120,12 +1120,9 @@ footer {
 }
 
 .banner-container {
-    animation: bg-animation 25s ease-in-out infinite;
     height: 100vh !important;
-    background-image: url(../img/city-bg.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(180deg, #83D0E4 0%, #ffffff 100%);
+    /*background-image: url(../img/city-bg.jpg);*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1137,13 +1134,13 @@ footer {
 }
 
 .accordion-button:not(.collapsed) {
-    color: #0131ff !important;
+    color: #83D0E4 !important;
     background-color: white !important;
 }
 
 .accordion-button:focus {
-    border-color: #0131ff !important;
-    box-shadow: 0 0 0 0.25rem #0131ff40;
+    border-color: #83D0E4 !important;
+    box-shadow: 0 0 0 0.25rem #83D0E440;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -1190,7 +1187,7 @@ footer {
 }
 
 .footer-link-texts a:hover {
-    color: #0131ff;
+    color: #83D0E4;
 }
 
 .footer-link-title {
@@ -1240,7 +1237,7 @@ footer {
 
 #fp-nav ul li a span {
     background-color: white !important;
-    border: 1px solid #0131ff !important;
+    border: 1px solid #83D0E4 !important;
 }
 
 .hr {
@@ -1343,6 +1340,26 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .form-container {
+        padding-top: 50px;
+    }
+
+    section:not(.form-container) {
+        padding: 20px 0;
+    }
+
+    .accordion-container > div {
+        max-width: 100%;
+    }
+
+    body .last-banner-img {
+       width: 100%;
+    }
+
+    .last-banner-block {
+        flex-direction: column;
+    }
+
     .button-prev, .button-next {
         display: none !important;
     }
@@ -1572,9 +1589,41 @@ button.accordion-button span {
     border-bottom: 1px solid rgba(68, 68, 68, 0.44);
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+.last-banner-block  {
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.last-banner-img {
+    width: 60%;
+    background-image: url('../img/city-bg.jpg.');
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.last-banner-text ul {
+    padding-left: 0;
+}
+
+.last-banner-text ul li {
+    list-style: none;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+/*#83D0E4 light_blue*/
+=======
+>>>>>>> Stashed changes
 .h1-text h1 {
     margin-top: 50px;
 }
 
 /*#85cfe1 light_blue*/
+>>>>>>> 4773c3d66c7372f99e2b6899768cb0421b210a69
 /*#444 darck_blue*/
