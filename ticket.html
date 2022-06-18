@@ -24,22 +24,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sifter/0.5.4/sifter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/selectize.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+    <script src="https://kit.fontawesome.com/63d75d0d59.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <script src="scripts/wow.min.js"></script>
     <script src="scripts/optg.js"></script>
     <script src="scripts/index.js"></script>
     <script>
-        let typed = new Typed('.type-word', {
-            strings: ["Россию", "Турцию", "Казахстан",],
-            cursorChar: '|',
-            typeSpeed: 100,
-            backSpeed: 100,
-            backDelay: 4000,
-            loop: true
-        });
         new WOW().init();
     </script>
 </head>
@@ -145,13 +137,8 @@
     </div>
 </header>
 <main>
-    <section class="form-container section">
+    <section class="ticket-page">
         <div class="form-block container">
-            <div class="h1-text">
-                <h1 class="mb-2">Билеты на самолет. Экономьте на полете!</h1>
-                <h5 class="mb-4 d-block" style="text-align: center">Летим в <span class="type-word"></span> </h5>
-            </div>
-
             <script>
                 function replaceElements(elem_1, elem_2) {
                     let next = elem_1.nextElementSiblings,
@@ -166,7 +153,6 @@
                     } else {
                         parent_1.appendChild(elem_2);
                     }
-
                 }
             </script>
 
@@ -303,91 +289,166 @@
                     <button class="btn-accept btn btn-primary">Найти</button>
                 </div>
             </form>
-            <div class="d-flex m-auto mt-4 flex-column justify-content-center align-items-center">
-                <span class="scroll-text">
-                    Прокрутить вниз
-                </span>
-                <div class="knsl-scroll-hint"></div>
-            </div>
-
-        </div>
-
-
-    </section>
-
-    <section class="banner-container section">
-        <h3 class="text-center mb-4">Лучшие предложения!</h3>
-        <div class="banner-block container">
-            <div class="swiper swiper-desc">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div>
-                            <a class="banner-desk" href="#">
-                                <img data-src="./img/bg1.jpg" style="max-width: 100%" class="swiper-lazy">
-                                <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <a class="banner-desk" href="#">
-                                <img data-src="./img/bg2.jpg" style="max-width: 100%" class="swiper-lazy">
-                                <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <a class="banner-desk" href="#">
-                                <img data-src="./img/bg3.jpg" style="max-width: 100%" class="swiper-lazy">
-                                <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper swiper-mob">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div>
-                            <a class="banner-desk" href="#" style="background-image: url(./img/mob-banner1.jpg);">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <a class="banner-desk" href="#" style="background-image: url(./img/mob-banner2.jpg);">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next button-prev">
-                <i class="bi bi-arrow-right-circle"></i>
-            </div>
-            <div class="swiper-button-prev button-next">
-                <i class="bi bi-arrow-left-circle"></i>
-            </div>
         </div>
     </section>
-
-    <section class="accordion-container section">
+    <section class="ticket-block">
         <div class="container">
-                <div class="last-banner-block d-flex">
-                    <div class=" last-banner-img"></div>
-                    <div class="last-banner-text p-3 w-100">
-                        <span class="h4 mb-3 d-block text-center">Ташкент</span>
-                        <ul class="mb-0" style="height: max-content">
-                            <li class="d-flex mb-2 align-items-center"><p class="d-flex align-items-center justify-content-center me-2 mb-0"><i class="bi bi-geo-fill"></i></p> <span>12345 Little Lonsdale St, Melbourne</span></li>
-                            <li class="d-flex mb-2 align-items-center"><p class="d-flex align-items-center justify-content-center me-2 mb-0"><i class="bi bi-telephone-fill"></i></p> <a style="color: inherit; text-decoration: none" href="tel:+998999999999">
-                                +99899-999-99-99</a></li>
-                            <li class="d-flex mb-2 align-items-center"><p class="d-flex align-items-center justify-content-center me-2 mb-0"><i class="bi bi-envelope-fill"></i></p> <a style="color: inherit; text-decoration: none" href="mailto:gggggg@gmail.com">office@example.com</a></li>
-                            <li class="d-flex mb-2 align-items-center"><p class="d-flex align-items-center justify-content-center me-2 mb-0"><i class="bi bi-clock-history"></i></p> <span>Режим работы: пн-вс  с 09:00 до 19:00</span></li>
-                        </ul>
+            <div class="ticket-item">
+                <div class="ticket-item-left">
+                    <div class="ticket-item-img">
+                        <div>
+                            <img src="https://avatars.mds.yandex.net/get-avia/1540405/2a0000016cb3e378c717e878ba2380d1a26e/orig" alt="">
+                        </div>
+                        <div>
+                            <img src="https://avatars.mds.yandex.net/get-avia/365172/2a0000016cb3e3b505d1500c40ab3b5cc9e7/orig" alt="">
+                        </div>
+                    </div>
+                    <div class="ticket-time">
+                        <div class="ticket-time-item">
+                            <div class="time-block">
+                                <span class="time">03:45</span>
+                                <span>Ташкент TAS</span>
+                            </div>
+                            <div class="time-line-block">
+                                <div>
+                                    <div class="ticket-line"></div>
+                                    <span>4 ч 25 мин</span>
+                                    <div class="ticket-line"></div>
+                                </div>
+                                <span>прямой</span>
+                            </div>
+                            <div class="time-block">
+                                <span class="time">10:20</span>
+                                <span>Москва MOW</span>
+                            </div>
+                        </div>
+                        <div class="ticket-time-item">
+                            <div class="time-block">
+                                <span class="time">10:20</span>
+                                <span>Москва MOW</span>
+                            </div>
+                            <div class="time-line-block">
+                                <div>
+                                    <div class="ticket-line"></div>
+                                    <span>4 ч 25 мин</span>
+                                    <div class="ticket-line"></div>
+                                </div>
+                                <span>прямой</span>
+                            </div>
+                            <div class="time-block">
+                                <span class="time">03:45</span>
+                                <span>Ташкент TAS</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            <div class="hr"></div>
+                <div class="ticket-item-right">
+                    <div class="ticket-info">
+                        <span class="chart">Чартер</span>
+                        <span class="top">Лучшая цена</span>
+                    </div>
+                    <div class="ticket-price">
+                        <span>
+                           <i class="fa-solid fa-user-tag"></i> Эконом (Y)
+                        </span>
+                        <br>
+                        <span>
+                           <i class="fa-solid fa-suitcase-rolling"></i> 10кг бесплатно
+                        </span>
+                        <a href="#">9 157 500 <sup>uzs</sup></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-item">
+                <div class="ticket-item-left">
+                    <div class="ticket-item-img">
+                        <div>
+                            <img src="https://avatars.mds.yandex.net/get-avia/1540405/2a0000016cb3e378c717e878ba2380d1a26e/orig" alt="">
+                        </div>
+                    </div>
+                    <div class="ticket-time">
+                        <div class="ticket-time-item">
+                            <div class="time-block">
+                                <span class="time">03:45</span>
+                                <span>Ташкент TAS</span>
+                            </div>
+                            <div class="time-line-block">
+                                <div>
+                                    <div class="ticket-line"></div>
+                                    <span>4 ч 25 мин</span>
+                                    <div class="ticket-line"></div>
+                                </div>
+                                <span>прямой</span>
+                            </div>
+                            <div class="time-block">
+                                <span class="time">10:20</span>
+                                <span>Москва MOW</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket-item-right">
+                    <div class="ticket-info">
+                        <span class="chart">Чартер</span>
+                        <span class="top">Лучшая цена</span>
+                    </div>
+                    <div class="ticket-price">
+                        <span>
+                           <i class="fa-solid fa-user-tag"></i> Эконом (Y)
+                        </span>
+                        <br>
+                        <span>
+                           <i class="fa-solid fa-suitcase-rolling"></i> 10кг бесплатно
+                        </span>
+                        <a href="#">9 157 500 <sup>uzs</sup></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-item">
+                <div class="ticket-item-left">
+                    <div class="ticket-item-img">
+                        <div>
+                            <img src="https://avatars.mds.yandex.net/get-avia/365172/2a0000016cb3e3b505d1500c40ab3b5cc9e7/orig" alt="">
+                        </div>
+                    </div>
+                    <div class="ticket-time">
+                        <div class="ticket-time-item">
+                            <div class="time-block">
+                                <span class="time">10:20</span>
+                                <span>Москва MOW</span>
+                            </div>
+                            <div class="time-line-block">
+                                <div>
+                                    <div class="ticket-line"></div>
+                                    <span>4 ч 25 мин</span>
+                                    <div class="ticket-line"></div>
+                                </div>
+                                <span>прямой</span>
+                            </div>
+                            <div class="time-block">
+                                <span class="time">03:45</span>
+                                <span>Ташкент TAS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket-item-right">
+                    <div class="ticket-info">
+                        <span class="chart">Чартер</span>
+                        <span class="top">Лучшая цена</span>
+                    </div>
+                    <div class="ticket-price">
+                        <span>
+                           <i class="fa-solid fa-user-tag"></i> Эконом (Y)
+                        </span>
+                        <br>
+                        <span>
+                           <i class="fa-solid fa-suitcase-rolling"></i> 10кг бесплатно
+                        </span>
+                        <a href="#">9 157 500 <sup>uzs</sup></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>

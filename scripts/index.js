@@ -242,16 +242,6 @@ $(function () {
         pagination: false
     });
 
-
-    let typed = new Typed('.type-word', {
-        strings: ["Россию", "Турцию", "Казахстан",],
-        cursorChar: '|',
-        typeSpeed: 100,
-        backSpeed: 100,
-        backDelay: 4000,
-        loop: true
-    });
-
     $('#fullpage').fullpage({
         autoScrolling:true,
         scrollHorizontally: true,
