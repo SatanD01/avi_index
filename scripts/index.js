@@ -242,16 +242,6 @@ $(function () {
         pagination: false
     });
 
-    $('#fullpage').fullpage({
-        autoScrolling:true,
-        scrollHorizontally: true,
-        parallax: false,
-        responsiveWidth: 768,
-        responsiveSlides: true,
-        navigation: true,
-        navigationPosition: 'right',
-    });
-
     new Litepicker({
         element: document.getElementById('start-date'),
         hotelMode: 1,
@@ -285,5 +275,6 @@ $(function () {
             many: "ночей",
         },
     });
+
 
 });
