@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>aviasales</title>
+    <!--    links   -->
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"/>
+    <link rel="stylesheet" href="styles/intlTelInput.css">
+
+    <!--    header scripts  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microplugin/0.0.3/microplugin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sifter/0.5.4/sifter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/selectize.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+    <script src="https://kit.fontawesome.com/63d75d0d59.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="scripts/wow.min.js"></script>
+    <script src="scripts/optg.js"></script>
+    <script src="scripts/intlTelInput.js"></script>
+    <script src="scripts/utils.js"></script>
+
+    <script src="scripts/index.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+<div class="email-bt">
+    <div class="text-call">
+        <i class="bi bi-telegram"></i>
+        <a href="#">Обратная<br>связь</a>
+    </div>
+</div>
+<div class="dd-shadow"></div>
+<header class="header">
+    <div class="dd-shadow"></div>
+    <div class="header-container container">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="logo">
+        </a>
+        <div class="header-links">
+            <div class="dd-header">
+                <div class="dd-text">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Вход</span>
+                </div>
+                <div class="dd-toggle">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-aut" type="button" role="tab" aria-controls="pills-aut"
+                                    aria-selected="false">Авторизация
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-reg" type="button" role="tab" aria-controls="pills-reg"
+                                    aria-selected="true">Регистрация
+                            </button>
+                        </li>
+                    </ul>
+                    <form class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-aut" role="tabpanel"
+                             aria-labelledby="pills-aut-tab">
+                            <div class="header-form-input">
+                                    <span>
+                                        <sup>*</sup>Логин
+                                    </span>
+                                <input required type="text" class="form-control">
+                            </div>
+                            <div class="header-form-input">
+                                    <span>
+                                        <sup>*</sup>Пороль
+                                    </span>
+                                <input required type="text" class="form-control">
+                            </div>
+                            <button type="button" class="btn-accept btn btn-primary">
+                                Войти
+                            </button>
+                        </div>
+                        <div class="tab-pane fade" id="pills-reg" role="tabpanel" aria-labelledby="pills-reg-tab">
+                            <div class="header-form-input">
+                                    <span>
+                                        <sup>*</sup>Логин
+                                    </span>
+                                <input required type="text" class="form-control">
+                            </div>
+                            <div class="header-form-input">
+                                    <span>
+                                        <sup>*</sup>Email
+                                    </span>
+                                <input required type="email" class="form-control">
+                            </div>
+                            <div class="header-form-input">
+                                    <span>
+                                        <sup>*</sup>Номер телефона
+                                    </span>
+                                <input required type="text" class="form-control" value="+998" maxlength="13">
+                            </div>
+                            <div class="header-form-input">
+                                    <span>
+                                        <sup>*</sup>Пароль
+                                    </span>
+                                <input required type="text" class="form-control">
+                            </div>
+                            <button type="button" class="btn-accept btn btn-primary">
+                                Регистрация
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="dd-lang">
+                <div class="lang-text">
+                    <i class="bi bi-globe2"></i>
+                </div>
+                <div class="dd-lang-toggle">
+                    <a href="#">РУ</a>
+                    <a href="#">UZB</a>
+                    <a href="#">ENG</a>
+                </div>
+            </div>
+            <div class="phone-block">
+                <a href="tel:+998999999999">+99899-999-99-99</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="ticket-form mb-4 container">
+        <div class="ticket-left">
+            <div class="mb-4 mt-4">
+                <h1 class="h3">Бронирование авиабилета</h1>
+                <span class="h5">Ташкент-MLE</span>
+            </div>
+            <form action="">
+                <div class="br-grey  br-block bg-white">
+                    <div class="p-3">
+                        <span class="h5 mb-0 d-block">Контактная информация</span>
+                        <span class="d-block text-sm text-muted text-sm">На почту мы отправим электронный билет, на телефон мы позвоним, если будут изменения в рейсе или в случае других ситуаций</span>
+                    </div>
+                    <hr class="mt-0">
+                    <div class="p-3">
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                <span class="text-sm">Имя <b class="text-danger">*</b></span>
+                                <input autocomplete="off" required="" value="" name="client[name]" type="text"
+                                       class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <span class="text-sm">Электронная почта</span>
+                                <input autocomplete="off" value="" name="client[email]" type="email"
+                                       class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <span class="text-sm">Телефон <b class="text-danger">*</b></span>
+                                <input autocomplete="off" id='pinp' required name='client[phone]' type='tel'
+                                       class='form-control'>
+                                <span id="error-msg" class="text-sm text-danger"></span>
+                            </div>
+                        </div>
+                        <span class="text-sm text-muted"><b class="text-danger">*</b> Обязательные поля</span>
+                    </div>
+
+                </div>
+                <div class="mt-3 br-grey br-block bg-white">
+                    <div class="p-3">
+                        <span class="h5 mb-0  d-block">Информация о пассажирах</span>
+                        <span class="d-block text-sm text-muted text-sm">Введите личные данные пассажиров, как указано в документе (паспорте), по которому они полетят. Поля нужно заполнять латинскими буквами.</span>
+                    </div>
+
+
+                    <hr class="mt-0">
+
+                    <div class="p-3 mb-3 idCnt position-relative">
+                        <div class="d-flex mb-3">
+                            <span class="h5 m-0"><i class="text-primary fa fa-male"></i> Взрослый</span>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <span class="text-sm">Фамилия</span>
+                                <input autocomplete="off" required="" name="pass[AD][0][surname]" type="text"
+                                       class="inplatin form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <span class="text-sm">Имя</span>
+                                <input autocomplete="off" required="" name="pass[AD][0][name]" type="text"
+                                       class="inplatin form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <span class="text-sm">Гражданство</span>
+                                <select class="form-control" name="pass[AD][0][cityzen]">
+                                    <option value="UZB">Узбекистан</option>
+                                    <option value="RUS">Российская Федерация</option>
+                                    <option value="KGZ">Киргизия</option>
+                                    <option value="KAZ">Казахстан</option>
+                                    <option value="AFG">Afghanistan</option>
+                                    <option value="ALB">Albania</option>
+                                    <option value="DZA">Algeria</option>
+                                    <option value="AND">Andorra</option>
+                                    <option value="AGO">Angola</option>
+                                    <option value="ATG">Antigua and Barbuda</option>
+                                    <option value="ARG">Argentina</option>
+                                    <option value="ARM">Armenia</option>
+                                    <option value="AUS">Australia</option>
+                                    <option value="AUT">Austria</option>
+                                    <option value="AZE">Azerbaijan</option>
+                                    <option value="BHS">Bahamas</option>
+                                    <option value="BHR">Bahrain</option>
+                                    <option value="BGD">Bangladesh</option>
+                                    <option value="BRB">Barbados</option>
+                                    <option value="BLR">Belarus</option>
+                                    <option value="BEL">Belgium</option>
+                                    <option value="BLZ">Belize</option>
+                                    <option value="BEN">Benin</option>
+                                    <option value="BTN">Bhutan</option>
+                                    <option value="BOL">Bolivia, Plurinational State of</option>
+                                    <option value="BIH">Bosnia and Herzegovina</option>
+                                    <option value="BWA">Botswana</option>
+                                    <option value="BRA">Brazil</option>
+                                    <option value="BRN">Brunei Darussalam</option>
+                                    <option value="BGR">Bulgaria</option>
+                                    <option value="BFA">Burkina Faso</option>
+                                    <option value="BDI">Burundi</option>
+                                    <option value="CPV">Cabo Verde</option>
+                                    <option value="KHM">Cambodia</option>
+                                    <option value="CMR">Cameroon</option>
+                                    <option value="CAN">Canada</option>
+                                    <option value="CAF">Central African Republic</option>
+                                    <option value="TCD">Chad</option>
+                                    <option value="CHL">Chile</option>
+                                    <option value="CHN">China</option>
+                                    <option value="COL">Colombia</option>
+                                    <option value="COM">Comoros</option>
+                                    <option value="COG">Congo</option>
+                                    <option value="COD">Congo, the Democratic Republic of the</option>
+                                    <option value="CRI">Costa Rica</option>
+                                    <option value="CIV">Côte d'Ivoire</option>
+                                    <option value="HRV">Croatia</option>
+                                    <option value="CUB">Cuba</option>
+                                    <option value="CYP">Cyprus</option>
+                                    <option value="CZE">Czech Republic</option>
+                                    <option value="DNK">Denmark</option>
+                                    <option value="DJI">Djibouti</option>
+                                    <option value="DMA">Dominica</option>
+                                    <option value="DOM">Dominican Republic</option>
+                                    <option value="ECU">Ecuador</option>
+                                    <option value="EGY">Egypt</option>
+                                    <option value="SLV">El Salvador</option>
+                                    <option value="GNQ">Equatorial Guinea</option>
+                                    <option value="ERI">Eritrea</option>
+                                    <option value="EST">Estonia</option>
+                                    <option value="ETH">Ethiopia</option>
+                                    <option value="FJI">Fiji</option>
+                                    <option value="FIN">Finland</option>
+                                    <option value="FRA">France</option>
+                                    <option value="GAB">Gabon</option>
+                                    <option value="GMB">Gambia</option>
+                                    <option value="GEO">Georgia</option>
+                                    <option value="DEU">Germany</option>
+                                    <option value="GHA">Ghana</option>
+                                    <option value="GRC">Greece</option>
+                                    <option value="GRD">Grenada</option>
+                                    <option value="GTM">Guatemala</option>
+                                    <option value="GIN">Guinea</option>
+                                    <option value="GNB">Guinea-Bissau</option>
+                                    <option value="GUY">Guyana</option>
+                                    <option value="HTI">Haiti</option>
+                                    <option value="VAT">Holy See (Vatican City State)</option>
+                                    <option value="HND">Honduras</option>
+                                    <option value="HUN">Hungary</option>
+                                    <option value="ISL">Iceland</option>
+                                    <option value="IND">India</option>
+                                    <option value="IDN">Indonesia</option>
+                                    <option value="IRN">Iran, Islamic Republic of</option>
+                                    <option value="IRQ">Iraq</option>
+                                    <option value="IRL">Ireland</option>
+                                    <option value="ISR">Israel</option>
+                                    <option value="ITA">Italy</option>
+                                    <option value="JAM">Jamaica</option>
+                                    <option value="JPN">Japan</option>
+                                    <option value="JOR">Jordan</option>
+                                    <option value="KEN">Kenya</option>
+                                    <option value="KIR">Kiribati</option>
+                                    <option value="KOR">Korea, Republic of</option>
+                                    <option value="KWT">Kuwait</option>
+                                    <option value="LAO">Lao People's Democratic Republic</option>
+                                    <option value="LVA">Latvia</option>
+                                    <option value="LBN">Lebanon</option>
+                                    <option value="LSO">Lesotho</option>
+                                    <option value="LBR">Liberia</option>
+                                    <option value="LBY">Libya</option>
+                                    <option value="LIE">Liechtenstein</option>
+                                    <option value="LTU">Lithuania</option>
+                                    <option value="LUX">Luxembourg</option>
+                                    <option value="MKD">Macedonia, The Former Yugoslav Republic of</option>
+                                    <option value="MDG">Madagascar</option>
+                                    <option value="MWI">Malawi</option>
+                                    <option value="MYS">Malaysia</option>
+                                    <option value="MDV">Maldives</option>
+                                    <option value="MLI">Mali</option>
+                                    <option value="MLT">Malta</option>
+                                    <option value="MHL">Marshall Islands</option>
+                                    <option value="MRT">Mauritania</option>
+                                    <option value="MUS">Mauritius</option>
+                                    <option value="MEX">Mexico</option>
+                                    <option value="FSM">Micronesia, Federated States of</option>
+                                    <option value="MDA">Moldova, Republic of</option>
+                                    <option value="MCO">Monaco</option>
+                                    <option value="MNG">Mongolia</option>
+                                    <option value="MNE">Montenegro</option>
+                                    <option value="MAR">Morocco</option>
+                                    <option value="MOZ">Mozambique</option>
+                                    <option value="MMR">Myanmar</option>
+                                    <option value="NAM">Namibia</option>
+                                    <option value="NRU">Nauru</option>
+                                    <option value="NPL">Nepal</option>
+                                    <option value="NLD">Netherlands</option>
+                                    <option value="NZL">New Zealand</option>
+                                    <option value="NIC">Nicaragua</option>
+                                    <option value="NER">Niger</option>
+                                    <option value="NGA">Nigeria</option>
+                                    <option value="NOR">Norway</option>
+                                    <option value="OMN">Oman</option>
+                                    <option value="PAK">Pakistan</option>
+                                    <option value="PLW">Palau</option>
+                                    <option value="PSE">Palestine, State of</option>
+                                    <option value="PAN">Panama</option>
+                                    <option value="PNG">Papua New Guinea</option>
+                                    <option value="PRY">Paraguay</option>
+                                    <option value="PER">Peru</option>
+                                    <option value="PHL">Philippines</option>
+                                    <option value="POL">Poland</option>
+                                    <option value="PRT">Portugal</option>
+                                    <option value="QAT">Qatar</option>
+                                    <option value="ROU">Romania</option>
+                                    <option value="RWA">Rwanda</option>
+                                    <option value="KNA">Saint Kitts and Nevis</option>
+                                    <option value="LCA">Saint Lucia</option>
+                                    <option value="VCT">Saint Vincent and the Grenadines</option>
+                                    <option value="WSM">Samoa</option>
+                                    <option value="SMR">San Marino</option>
+                                    <option value="STP">Sao Tome and Principe</option>
+                                    <option value="SAU">Saudi Arabia</option>
+                                    <option value="SEN">Senegal</option>
+                                    <option value="SRB">Serbia</option>
+                                    <option value="SYC">Seychelles</option>
+                                    <option value="SLE">Sierra Leone</option>
+                                    <option value="SGP">Singapore</option>
+                                    <option value="SVK">Slovakia</option>
+                                    <option value="SVN">Slovenia</option>
+                                    <option value="SLB">Solomon Islands</option>
+                                    <option value="SOM">Somalia</option>
+                                    <option value="ZAF">South Africa</option>
+                                    <option value="SSD">South Sudan</option>
+                                    <option value="ESP">Spain</option>
+                                    <option value="LKA">Sri Lanka</option>
+                                    <option value="SDN">Sudan</option>
+                                    <option value="SUR">Suriname</option>
+                                    <option value="SWZ">Swaziland</option>
+                                    <option value="SWE">Sweden</option>
+                                    <option value="CHE">Switzerland</option>
+                                    <option value="SYR">Syrian Arab Republic</option>
+                                    <option value="TWN">Taiwan, Province of China</option>
+                                    <option value="TJK">Tajikistan</option>
+                                    <option value="TZA">Tanzania, United Republic of</option>
+                                    <option value="THA">Thailand</option>
+                                    <option value="TLS">Timor-Leste</option>
+                                    <option value="TGO">Togo</option>
+                                    <option value="TON">Tonga</option>
+                                    <option value="TTO">Trinidad and Tobago</option>
+                                    <option value="TUN">Tunisia</option>
+                                    <option value="TUR">Turkey</option>
+                                    <option value="TKM">Turkmenistan</option>
+                                    <option value="TUV">Tuvalu</option>
+                                    <option value="UGA">Uganda</option>
+                                    <option value="UKR">Ukraine</option>
+                                    <option value="ARE">United Arab Emirates</option>
+                                    <option value="GBR">United Kingdom</option>
+                                    <option value="USA">United States</option>
+                                    <option value="URY">Uruguay</option>
+                                    <option value="VUT">Vanuatu</option>
+                                    <option value="VEN">Venezuela, Bolivarian Republic of</option>
+                                    <option value="VNM">Viet Nam</option>
+                                    <option value="ESH">Western Sahara</option>
+                                    <option value="YEM">Yemen</option>
+                                    <option value="ZMB">Zambia</option>
+                                    <option value="ZWE">Zimbabwe</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span class="text-sm">Пол</span>
+                                <select name="pass[AD][0][sex]" required="" class="form-control">
+                                    <option value="">-</option>
+                                    <option value="M">Мужской</option>
+                                    <option value="F">Женский</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="text-sm">Дата рождения</span>
+                                <input autocomplete="off" required="" name="pass[AD][0][dob]" type="date"
+                                       class="inpdate form-control">
+                            </div>
+
+                            <div class="col-md-3">
+                                <span class="text-sm">Серия и № паспорта</span>
+                                <input autocomplete="off" required="" name="pass[AD][0][docid]" type="text"
+                                       class="inpCaps form-control">
+                            </div>
+                            <div class="col-md-3">
+                                <span class="text-sm">Срок действия</span>
+                                <input autocomplete="off" required="" name="pass[AD][0][docdate]" type="text"
+                                       class="inpdate form-control">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="mt-3 br-grey p-3 mb-3 br-block bg-white d-flex align-items-center">
+                    <div>
+                        <i class="fa fa-luggage-cart"></i> Ваш перелёт включает <b>20 кг</b> багажа
+                    </div>
+                </div>
+                <div class="br-grey p-3 br-block bg-white mb-3">
+                    <span class="text-sm">Комментарий</span>
+                    <textarea class="form-control" name="client[comment]" style="height: 111px;"></textarea>
+                </div>
+                <div class="br-grey p-3 br-block bg-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="d-block">
+                                Билеты будут бесплатно забронированы до: 20.07.2022
+                            </span>
+                            <span class="">
+                                по Ташкентскому времени
+					        </span>
+                        </div>
+                        <div class="ml-auto mr-5">
+                            <span class="d-block text-muted text-sm">Итого: </span>
+
+                            <span class="h3 m-0 text-primary"><span id="tPriceSum">8 880 000</span><sup>UZS</sup></span>
+                            /
+                            <span class="text-muted"><span data-price="800" id="tPrice">800</span><sup>$</sup></span>
+                        </div>
+                        <button id="orderFormBtn" class="btn btn-primary">Забронировать</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="ticket-right">
+
+        </div>
+    </section>
+</main>
+
+<footer class="footer-block">
+    <div class="container">
+        <div class="col-lg-4 col-md-4 col-6 pe-2">
+            <div class="footer-img">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="footer-logo-text">
+                <span>
+                    Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.
+                </span>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 px-2">
+            <div class="footer-link-title">
+                <h5>
+                    Helpful Links
+                </h5>
+            </div>
+            <div class="footer-link-texts">
+                <div class="col-6">
+                    <a href="#">
+                        Lorem ipsum dolor.
+                    </a>
+                    <a href="#">
+                        Lorem ipsum dolor.
+                    </a>
+                    <a href="#">
+                        Lorem ipsum dolor.
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="#">
+                        Lorem ipsum dolor.
+                    </a>
+                    <a href="#">
+                        Lorem ipsum dolor.
+                    </a>
+                    <a href="#">
+                        Lorem ipsum dolor.
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 ps-2">
+            <div class="footer-link-title">
+                <h5>
+                    Contact Us
+                </h5>
+            </div>
+            <div class="footer-social-links">
+                <span>12345 Little Lonsdale St, Melbourne</span>
+                <div class="footer-email-block">
+                    <span>E-Mail:</span>
+                    <a href="#">office@example.com</a>
+                </div>
+                <div class="footer-social-block">
+                    <a href="#"><i class="bi bi-telegram"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--    scripts     -->
+<script src=""></script>
+<link href="gphone/intlTelInput.min.css" rel="stylesheet">
+<script src='gphone/intlTelInput.min.js'></script>
+<script src='gphone/utils.js'></script>
+<script>
+    var pinp = document.querySelector("#pinp"),
+        errorMsg = document.querySelector("#error-msg");
+    var errorMap = ["Неправильный номер", "Неправильный код страны", "Слишком короткий номер", "Слишком длинный номер", "Неправильный номер"];
+    var iti = window.intlTelInput(pinp, {
+        hiddenInput: "fullPhone",
+        "preferredCountries": ["uz", "tr", "ru", "kz"],
+        separateDialCode: 1,
+        initialCountry: "auto",
+        geoIpLookup: function (success, failure) {
+            $.get("https://ipinfo.io", function () {
+            }, "jsonp").always(function (resp) {
+                var countryCode = (resp && resp.country) ? resp.country : "uz";
+                success(countryCode);
+            });
+        },
+
+    });
+
+    var reset = function () {
+        pinp.classList.remove("border-danger");
+        errorMsg.innerHTML = "";
+        errorMsg.classList.add("hide");
+    };
+
+    // on blur: validate
+    pinp.addEventListener('blur', function () {
+        reset();
+        if (pinp.value.trim()) {
+            if (iti.isValidNumber()) {
+//      validMsg.classList.remove("hide");
+            } else {
+                pinp.classList.add("border-danger");
+                var errorCode = iti.getValidationError();
+                errorMsg.innerHTML = errorMap[errorCode] ? errorMap[errorCode] : "Неправильный номер";
+                pinp.value = '';
+                errorMsg.classList.remove("hide");
+            }
+        }
+    });
+
+    // on keyup / change flag: reset
+    pinp.addEventListener('change', reset);
+    pinp.addEventListener('keyup', reset);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+</html>

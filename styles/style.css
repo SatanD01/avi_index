@@ -1771,6 +1771,14 @@ body .ticket-page {
 .time-line-block {
     max-width: 560px;
 }
+.ticket-form {
+    background-color: white;
+}
+
+.br-grey {
+    border: 1px solid rgba(166, 166, 166, 0.43);
+    border-radius: 1rem;
+}
 
 /*#85cfe1 light_blue*/
 /*#444 darck_blue*/
